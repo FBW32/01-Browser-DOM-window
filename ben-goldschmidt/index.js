@@ -27,12 +27,16 @@ let attemptCounter = 1;
 if (question != randomNumber) {
     // ATTEMPT 1 -> incorrect answer
     attemptCounter += 1;
+
+    // new Attempt 1
     let wrongPrompt1 = prompt(`Wrong!!! Try again!`)
     console.log(wrongPrompt1)
 
     if (wrongPrompt1 != randomNumber) {
         // ATTEMPT 2 -> incorrect answer
         attemptCounter += 1;
+
+        // new Attempt 2
         let wrongPrompt2 = prompt(`Wrong!!! Try again!`)
         console.log(wrongPrompt2)
 
