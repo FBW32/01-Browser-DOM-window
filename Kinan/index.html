@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guessing Game</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // create number
+            let num = Math.floor(Math.random()*10) 
+            // enter the first number
+            let guessNumber = prompt(`enter the first try`); 
+            guessNumber = parseInt(guessNumber); 
+            // checking for the first time
+           if(guessNumber !== num){ 
+               let guessNumber2 = prompt(`enter the seconed try`);
+               guessNumber2 = parseInt(guessNumber2);
+    
+            // checking for the seconed time
+
+            if(guessNumber2 !== num){
+                let guessNumber3 = prompt(`enter the last try`);
+               guessNumber3 = parseInt(guessNumber2); 
+
+               // checking for the last time
+               if(guessNumber3 !== num){
+                alert('Sorry Good Luck for the next Time !');
+
+                // else for the seconed statement
+               }else{
+                   alert('you won!');
+               }
+               // else for the seconed statement
+               }else{
+                alert("you won!") ;
+               }
+               // else for the first statement
+               }else{
+               alert("you won!");
+               }
+    
+        </script>
+    </body>
+    </html>
+</body>
+
+</html>
