@@ -1,6 +1,6 @@
 
 let answer = prompt("Guess a number from 1-10")
-let num = 0
+let num = 0 
 a= parseInt(answer);
 b = parseInt(num);
 
