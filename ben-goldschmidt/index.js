@@ -13,37 +13,48 @@
 
 // **See the images for reference**
 
+
+// RANDOM NUMBER
 let randomNumber = Math.floor(Math.random() * 10) + 1;
 
-
-
+// QUESTION PROMPT
 let question = prompt(`Guess a number between 1-10:`)
 // let question = prompt(`Guess a number between 1-10: ${randomNumber}`)
 
-
+// ATTEMPT COUNTER
 let attemptCounter = 1;
+
 if (question != randomNumber) {
+    // ATTEMPT 1 -> incorrect answer
     attemptCounter += 1;
     let wrongPrompt1 = prompt(`Wrong!!! Try again!`)
     console.log(wrongPrompt1)
 
     if (wrongPrompt1 != randomNumber) {
+        // ATTEMPT 2 -> incorrect answer
         attemptCounter += 1;
         let wrongPrompt2 = prompt(`Wrong!!! Try again!`)
         console.log(wrongPrompt2)
 
         if (wrongPrompt2 != randomNumber) {
+            // ATTEMPT 3 -> incorrect answer
             console.log(alert(`Sorry, you failed to guess the number ${randomNumber} in three(3) attempts!`))
         }
+
         else {
+            // ATTEMPT 3 -> answer correct
             console.log(alert(`Success! The number was ${randomNumber}, Attempt: ${attemptCounter}`))
         }
     }
+
     else {
+        // ATTEMPT 2 -> answer correct
         console.log(alert(`Success! The number was ${randomNumber}, Attempt: ${attemptCounter}`))
     }
 }
+
 else {
+    // ATTEMPT 1 -> answer correct
     console.log(alert(`Success! The number was ${randomNumber}, Attempt: ${attemptCounter}`))
 }
 
