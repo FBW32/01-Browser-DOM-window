@@ -20,6 +20,21 @@
         <li>Good luck!</li>
 
     </ul>
+    <script>
+        let Guess= prompt("Guess a number between 1-10");
+        let theNumber= Math.floor((Math.random()*10)+1);
+        for (i=0; i<2; i++){
+            
+            let userGuess= parseInt(Guess);
+                if(userGuess == theNumber){
+                    prompt(`Success, the number was ${theNumber}!, attempt: ${i}!`);
+                    console.log(theNumber);
+                }else {
+                    prompt("Nope, sorry! Try again!");
+                    console.log(theNumber);
+                }
+        } alert(`Sorry, you failed to guess the number in three attempts. the number was ${theNumber}`);
+    </script>
 </body>
 
 </html>
